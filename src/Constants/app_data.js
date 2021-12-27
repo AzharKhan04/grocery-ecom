@@ -56,9 +56,22 @@ const PRODUCT_CATEGORIES = [
     
 ]
 
+export const TOP_COURSEL_DATA = [
+    {
+        src:'https://www.bigbasket.com/media/uploads/banner_images/hp_f_v_m_winterveggies_460-251221.jpg'
+    },
+    {
+        src:'https://www.bigbasket.com/media/uploads/banner_images/hp_c_h_m_bbhome_460_251221.jpg'
+    },
+    {
+        src:'https://www.bigbasket.com/media/uploads/banner_images/hp_kgp_m_LaEspanola_460_251221.jpg'
+    },
+]
+
 
 
 const DASHBOARD_DATA = [
+    
     {
         title:"Shop by Category",
         data_type:'card',

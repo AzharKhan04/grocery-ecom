@@ -3,10 +3,10 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import AppHeader from './AppHeader';
 import Categories from "./Categories";
-import { DASHBOARD_DATA } from "../Constants/app_data";
+import { DASHBOARD_DATA, TOP_COURSEL_DATA } from "../Constants/app_data";
 import './Dashboard.css';
 import {useNavigate} from 'react-router-dom';
-
+import Coursel from "../lib/Coursel/Coursel";
 const Dashboard = () => {
 
     const navigate = useNavigate();
@@ -16,6 +16,11 @@ const Dashboard = () => {
     return (
         <React.Fragment>
              <AppHeader/>
+             <React.Fragment>
+                <Coursel data = {TOP_COURSEL_DATA}/>
+            </React.Fragment>
+
+             
              {
                  DASHBOARD_DATA.map((block,index)=>{
 
@@ -31,6 +36,7 @@ const Dashboard = () => {
                                         {block.title}
                                     </Typography>
                                     <br/>
+
                                     </React.Fragment>
                                     }
                                     <Grid container spacing={1}>
@@ -108,6 +114,7 @@ const Dashboard = () => {
                                     
                                 </React.Fragment>    
                             }
+                            
                         
                         </div>    
 
