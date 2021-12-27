@@ -1,0 +1,14 @@
+.block_root {
+    margin-top: 8px;
+    background-color: white;
+    padding: 20px;
+
+}
+
+.card_heading {
+    margin-top: 10px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size:13px
+}
